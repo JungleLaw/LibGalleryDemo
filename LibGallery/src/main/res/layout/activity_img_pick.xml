@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/titlebar"
+        style="@style/TitleBarBgColorStylet">
+
+        <TextView
+            android:id="@+id/btn_back"
+            style="@style/TitleBarBackStyle" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/TitleBarTitleTextStyle"
+            android:text="选择图片" />
+
+        <TextView
+            android:id="@+id/btn_confirm"
+            style="@style/TitleBarRightStyle"
+            android:enabled="false"
+            android:text="确定" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1">
+
+        <GridView
+            android:id="@+id/gv_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/black"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:numColumns="3" />
+
+        <com.zte.android.lib.media.widget.DropView
+            android:id="@+id/dropview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="#000000" />
+
+    <RelativeLayout
+        android:id="@+id/layout_pick_multi_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="44dip"
+        android:background="#65000000">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true">
+
+            <TextView
+                android:id="@+id/tv_album_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:clickable="true"
+                android:ellipsize="end"
+                android:ems="5"
+                android:gravity="center"
+                android:padding="10dip"
+                android:text="相册"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_15" />
+
+            <ImageView
+                android:layout_width="10dip"
+                android:layout_height="10dip"
+                android:layout_alignBottom="@id/tv_album_name"
+                android:layout_alignRight="@id/tv_album_name"
+                android:src="@drawable/media_icon_subscript" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_origin"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:clickable="true"
+            android:drawableLeft="@drawable/bg_media_selection_selector"
+            android:drawablePadding="10dip"
+            android:gravity="center"
+            android:text="原图"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp_15" />
+
+        <TextView
+            android:id="@+id/btn_preview"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:enabled="false"
+            android:gravity="center"
+            android:padding="10dip"
+            android:text="预览"
+            android:textSize="@dimen/sp_15" />
+    </RelativeLayout>
+</LinearLayout>

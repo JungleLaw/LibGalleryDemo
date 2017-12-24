@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- COLOR FOR Gallery PlaceHolder -->
+    <color name="color_for_photo_fri">#2E2D2B</color>
+    <color name="color_for_photo_sec">#454440</color>
+    <color name="color_for_photo_thi">#696761</color>
+    <color name="color_for_photo_fou">#A6A39A</color>
+    <color name="color_for_photo_fif">#C9C6BB</color>
+
+    <color name="b6">#FFFFFF</color> <!--页面背景2&输入框背景1-->
+    <color name="T8">#333333</color>
+    <color name="T9">#666666</color>
+    <!--分隔线颜色-->
+    <color name="divider">#e0e0e0</color>
+
+    <color name="drop_view_empty_bg">#65000000</color>
+
+</resources>

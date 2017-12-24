@@ -1,0 +1,6 @@
+<resources>
+    <string name="pick_image_intent_chooser_title">Select source</string>
+
+    <string name="key_internal_uri_extsdcard_photos">uri_extsdcard_photos</string>
+
+</resources>

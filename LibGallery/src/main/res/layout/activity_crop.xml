@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout style="@style/TitleBarBgColorStylet">
+
+        <TextView
+            android:id="@+id/btn_back"
+            style="@style/TitleBarBackStyle" />
+
+        <TextView
+            style="@style/TitleBarTitleTextStyle"
+            android:text="裁剪图片" />
+
+        <TextView
+            android:id="@+id/save"
+            style="@style/TitleBarRightStyle"
+            android:text="保存" />
+    </RelativeLayout>
+
+    <com.zte.android.lib.media.crop.view.CropImageView
+        android:id="@+id/crop_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
